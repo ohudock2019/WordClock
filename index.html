@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OwenH WordClock</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/p5/p5.min.js"></script>
+    <script src="./js/sketch.js"></script>
+</head>
+
+<body>
+    <div class="watchFace">
+        <span class="letter col_0 row_0 wordItIs">I</span>
+        <span class="letter col_1 row_0 wordItIs">T</span>
+        <span class="letter col_2 row_0">H</span>
+        <span class="letter col_3 row_0 wordItIs">I</span>
+        <span class="letter col_4 row_0 wordItIs">S</span>
+        <span class="letter col_5 row_0">U</span>
+        <span class="letter col_6 row_0 wordQuarter">Q</span>
+        <span class="letter col_7 row_0 wordQuarter">U</span>
+        <span class="letter col_8 row_0 wordQuarter">A</span>
+        <span class="letter col_9 row_0 wordQuarter">R</span>
+        <span class="letter col_10 row_0 wordQuarter">T</span>
+        <span class="letter col_11 row_0 wordQuarter">E</span>
+        <span class="letter col_12 row_0 wordQuarter">R</span>
+        <span class="letter col_13 row_0 ">C</span>
+
+        <span class="letter col_0 row_1 wordHalf">H</span>
+        <span class="letter col_1 row_1 wordHalf">A</span>
+        <span class="letter col_2 row_1 wordHalf">L</span>
+        <span class="letter col_3 row_1 wordHalf">F</span>
+        <span class="letter col_4 row_1">O</span>
+        <span class="letter col_5 row_1 wordPast">P</span>
+        <span class="letter col_6 row_1 wordPast">A</span>
+        <span class="letter col_7 row_1 wordPast">S</span>
+        <span class="letter col_8 row_1 wordPast wordTo">T</span>
+        <span class="letter col_9 row_1 wordTo">O</span>
+        <span class="letter col_10 row_1">E</span>
+        <span class="letter col_11 row_1">V</span>
+        <span class="letter col_12 row_1">E</span>
+        <span class="letter col_13 row_1">N</span>
+
+        <span class="letter col_0 row_2 word1">O</span>
+        <span class="letter col_1 row_2 word1">N</span>
+        <span class="letter col_2 row_2 word1">E</span>
+        <span class="letter col_3 row_2 word2">T</span>
+        <span class="letter col_4 row_2 word2">W</span>
+        <span class="letter col_5 row_2 word2">O</span>
+        <span class="letter col_6 row_2 word3">T</span>
+        <span class="letter col_7 row_2 word3">H</span>
+        <span class="letter col_8 row_2 word3">R</span>
+        <span class="letter col_9 row_2 word3">E</span>
+        <span class="letter col_10 row_2 word3">E</span>
+        <span class="letter col_11 row_2 word6">S</span>
+        <span class="letter col_12 row_2 word6">I</span>
+        <span class="letter col_13 row_2 word6">X</span>
+
+        <span class="letter col_0 row_3 word4">F</span>
+        <span class="letter col_1 row_3 word4">O</span>
+        <span class="letter col_2 row_3 word4">U</span>
+        <span class="letter col_3 row_3 word4">R</span>
+        <span class="letter col_4 row_3 word0">M</span>
+        <span class="letter col_5 row_3 word0">I</span>
+        <span class="letter col_6 row_3 word0">D</span>
+        <span class="letter col_7 row_3 word0">N</span>
+        <span class="letter col_8 row_3 word0">I</span>
+        <span class="letter col_9 row_3 word0">G</span>
+        <span class="letter col_10 row_3 word0">H</span>
+        <span class="letter col_11 row_3 word0">T</span>
+        <span class="letter col_12 row_3">O</span>
+        <span class="letter col_13 row_3">W</span>
+
+        <span class="letter col_0 row_4 word7">S</span>
+        <span class="letter col_1 row_4 word7">E</span>
+        <span class="letter col_2 row_4 word7">V</span>
+        <span class="letter col_3 row_4 word7">E</span>
+        <span class="letter col_4 row_4 word7 word9">N</span>
+        <span class="letter col_5 row_4 word9">I</span>
+        <span class="letter col_6 row_4 word9">N</span>
+        <span class="letter col_7 row_4 word9 word8">E</span>
+        <span class="letter col_8 row_4 word8">I</span>
+        <span class="letter col_9 row_4 word8">G</span>
+        <span class="letter col_10 row_4 word8">H</span>
+        <span class="letter col_11 row_4 word8">T</span>
+        <span class="letter col_12 row_4">E</span>
+        <span class="letter col_13 row_4">N</span>
+
+        <span class="letter col_0 row_5 word10">T</span>
+        <span class="letter col_1 row_5 word10">E</span>
+        <span class="letter col_2 row_5 word10">N</span>
+        <span class="letter col_3 row_5 word11">E</span>
+        <span class="letter col_4 row_5 word11">L</span>
+        <span class="letter col_5 row_5 word11">E</span>
+        <span class="letter col_6 row_5 word11">V</span>
+        <span class="letter col_7 row_5 word11">E</span>
+        <span class="letter col_8 row_5 word11">N</span>
+        <span class="letter col_9 row_5 word5">F</span>
+        <span class="letter col_10 row_5 word5">I</span>
+        <span class="letter col_11 row_5 word5">V</span>
+        <span class="letter col_12 row_5 word5">E</span>
+        <span class="letter col_13 row_5">Y</span>
+        
+        <span class="letter col_0 row_6 wordOclock">O</span>
+        <span class="letter col_1 row_6 wordOclock">'</span>
+        <span class="letter col_2 row_6 wordOclock">C</span>
+        <span class="letter col_3 row_6 wordOclock">L</span>
+        <span class="letter col_4 row_6 wordOclock">O</span>
+        <span class="letter col_5 row_6 wordOclock">C</span>
+        <span class="letter col_6 row_6 wordOclock">K</span>
+        <span class="letter col_7 row_6">S</span>
+        <span class="letter col_8 row_6 wordInThe">I</span>
+        <span class="letter col_9 row_6 wordInThe">N</span>
+        <span class="letter col_10 row_6">C</span>
+        <span class="letter col_11 row_6 wordInThe">T</span>
+        <span class="letter col_12 row_6 wordInThe">H</span>
+        <span class="letter col_13 row_6 wordInThe">E</span>
+        
+        <span class="letter col_0 row_7 wordMorning">M</span>
+        <span class="letter col_1 row_7 wordMorning">O</span>
+        <span class="letter col_2 row_7 wordMorning">R</span>
+        <span class="letter col_3 row_7 wordMorning">N</span>
+        <span class="letter col_4 row_7 wordMorning">I</span>
+        <span class="letter col_5 row_7 wordMorning">N</span>
+        <span class="letter col_6 row_7 wordMorning">G</span>
+        <span class="letter col_7 row_7 wordEvening">E</span>
+        <span class="letter col_8 row_7 wordEvening">V</span>
+        <span class="letter col_9 row_7 wordEvening">E</span>
+        <span class="letter col_10 row_7 wordEvening">N</span>
+        <span class="letter col_11 row_7 wordEvening">I</span>
+        <span class="letter col_12 row_7 wordEvening">N</span>
+        <span class="letter col_13 row_7 wordEvening">G</span>
+
+        <span class="letter col_0 row_8 wordAfternoon">A</span>
+        <span class="letter col_1 row_8 wordAfternoon">F</span>
+        <span class="letter col_2 row_8 wordAfternoon">T</span>
+        <span class="letter col_3 row_8 wordAfternoon">E</span>
+        <span class="letter col_4 row_8 wordAfternoon">R</span>
+        <span class="letter col_5 row_8 wordAfternoon word12">N</span>
+        <span class="letter col_6 row_8 wordAfternoon word12">O</span>
+        <span class="letter col_7 row_8 wordAfternoon word12">O</span>
+        <span class="letter col_8 row_8 wordAfternoon word12 wordNight">N</span>
+        <span class="letter col_9 row_8 wordNight">I</span>
+        <span class="letter col_10 row_8 wordNight">G</span>
+        <span class="letter col_11 row_8 wordNight">H</span>
+        <span class="letter col_12 row_8 wordNight">T</span>
+        <span class="letter col_13 row_8">P</span>
+
+    </div>
+     
+</body>
+
+
+
+</html>

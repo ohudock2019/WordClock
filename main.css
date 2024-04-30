@@ -1,0 +1,164 @@
+:root {
+    --marginHorizontal: 10%;
+    --marginVertical: 10%;
+    --totalColums: 14;
+    --totalRows: 9;
+
+}
+
+body {
+    background-color: #b5b5b5;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    /* background-color: #4d4855;
+    background-image: linear-gradient(147deg, #6e6b7b 0%, #48464e 60%); */
+    background: linear-gradient(268deg, #aab3ca, #3b435a);
+    background-size: 400% 400%;
+    animation: Gradient 20s ease infinite;
+    margin: 0px;
+    padding: 0px;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 19% 0%
+    }
+    50% {
+        background-position: 82% 100%
+    }
+    100% {
+        background-position: 19% 0%
+    }
+}
+
+.watchFace {
+    width: 90vmin;
+    height: 90vmin;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    /* border: 1px solid rgba(255, 255, 255, 0.18);
+    background-image: url("../img/rowGif3.gif");
+    background-size:cover;
+    background-color: rgb(232, 232, 232);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
+
+}
+
+.letter {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: block;
+    text-align: center;
+    color: #ececec;
+    opacity: .1;
+}
+
+.letterOn {
+    opacity: 1;
+    color: #ffffff;
+    text-shadow:0px 0px 2px #fff;
+}
+
+.col_0 {
+    left: calc(var(--marginHorizontal) + (100% - var(--marginHorizontal) * 2) / (var(--totalColums) - 1) * 0);
+}
+
+.col_1 {
+    left: calc(var(--marginHorizontal) + (100% - var(--marginHorizontal) * 2) / (var(--totalColums) - 1) * 1);
+}
+
+.col_2 {
+    left: calc(var(--marginHorizontal) + (100% - var(--marginHorizontal) * 2) / (var(--totalColums) - 1) * 2);
+}
+
+.col_3 {
+    left: calc(var(--marginHorizontal) + (100% - var(--marginHorizontal) * 2) / (var(--totalColums) - 1) * 3);
+}
+
+.col_4 {
+    left: calc(var(--marginHorizontal) + (100% - var(--marginHorizontal) * 2) / (var(--totalColums) - 1) * 4);
+}
+
+.col_5 {
+    left: calc(var(--marginHorizontal) + (100% - var(--marginHorizontal) * 2) / (var(--totalColums) - 1) * 5);
+}
+
+.col_6 {
+    left: calc(var(--marginHorizontal) + (100% - var(--marginHorizontal) * 2) / (var(--totalColums) - 1) * 6);
+}
+
+.col_7 {
+    left: calc(var(--marginHorizontal) + (100% - var(--marginHorizontal) * 2) / (var(--totalColums) - 1) * 7);
+}
+
+.col_8 {
+    left: calc(var(--marginHorizontal) + (100% - var(--marginHorizontal) * 2) / (var(--totalColums) - 1) * 8);
+}
+
+.col_9 {
+    left: calc(var(--marginHorizontal) + (100% - var(--marginHorizontal) * 2) / (var(--totalColums) - 1) * 9);
+}
+
+.col_10 {
+    left: calc(var(--marginHorizontal) + (100% - var(--marginHorizontal) * 2) / (var(--totalColums) - 1) * 10);
+}
+
+.col_11 {
+    left: calc(var(--marginHorizontal) + (100% - var(--marginHorizontal) * 2) / (var(--totalColums) - 1) * 11);
+}
+
+.col_12 {
+    left: calc(var(--marginHorizontal) + (100% - var(--marginHorizontal) * 2) / (var(--totalColums) - 1) * 12);
+}
+
+.col_13 {
+    left: calc(var(--marginHorizontal) + (100% - var(--marginHorizontal) * 2) / (var(--totalColums) - 1) * 13);
+}
+
+.row_0 {
+    top: calc(var(--marginVertical) + (100% - var(--marginVertical) * 2) / (var(--totalRows) - 1) * 0);
+}
+
+.row_1 {
+    top: calc(var(--marginVertical) + (100% - var(--marginVertical) * 2) / (var(--totalRows) - 1) * 1);
+}
+
+.row_2 {
+    top: calc(var(--marginVertical) + (100% - var(--marginVertical) * 2) / (var(--totalRows) - 1) * 2);
+}
+
+.row_3 {
+    top: calc(var(--marginVertical) + (100% - var(--marginVertical) * 2) / (var(--totalRows) - 1) * 3);
+}
+
+.row_4 {
+    top: calc(var(--marginVertical) + (100% - var(--marginVertical) * 2) / (var(--totalRows) - 1) * 4);
+}
+
+.row_5 {
+    top: calc(var(--marginVertical) + (100% - var(--marginVertical) * 2) / (var(--totalRows) - 1) * 5);
+}
+
+.row_6 {
+    top: calc(var(--marginVertical) + (100% - var(--marginVertical) * 2) / (var(--totalRows) - 1) * 6);
+}
+
+.row_7 {
+    top: calc(var(--marginVertical) + (100% - var(--marginVertical) * 2) / (var(--totalRows) - 1) * 7);
+}
+
+.row_8 {
+    top: calc(var(--marginVertical) + (100% - var(--marginVertical) * 2) / (var(--totalRows) - 1) * 8);
+}
+
+.row_9 {
+    top: calc(var(--marginVertical) + (100% - var(--marginVertical) * 2) / (var(--totalRows) - 1) * 9);
+}
